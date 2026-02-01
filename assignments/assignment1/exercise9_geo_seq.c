@@ -1,4 +1,4 @@
-//import headers
+//link headers
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,13 +20,19 @@ int main(int argc, char *argv[]){
         return 1;
     }
     else{
-        printf("Argumets: n=%d, a=%d, r=%d", n, a, r);
+        printf("Argumets: n=%d, a=%d, r=%d\n", n, a, r);
     }
 
+    int term = a;
+    printf("Sequence:");
     // for k=0, while k<n, k++
-        // print a*(r**k)
-        //
-    //
+    for(int k=0; k<n; k++){
+        // print current term
+        printf("%d, ",term);
+        // multiply current term by r
+        term *= r;
+    }
+
     // retturn 0
     return 0;
 }
